@@ -14,7 +14,7 @@ def main():
                 print("{} * {} = {}".format(opposite_number, number, opposite_number * number))
                 sys.exit(0)
             found[found_number] = True
-    print("No combination found that adds up to 2020.")
+    print("No combination found that adds up to {}".format(desired_sum))
     sys.exit(1)
 
 if __name__ == '__main__':
