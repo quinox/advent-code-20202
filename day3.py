@@ -7,7 +7,7 @@ with open(sys.argv[1]) as handle:
     for line in handle:
         objects = list(line.rstrip('\n'))
         marker = 'O'  # no tree
-        if objects[(position) % len(objects)] == '#':
+        if objects[position % len(objects)] == '#':
             trees += 1
             marker = 'X'  # tree
         objects[position] = marker
